@@ -159,7 +159,7 @@ Key steps performed:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/ChurnLens.git
+git clone https://github.com/IamDataExplorer/ChurnLens-Analysing-Predicting-Customer-Attrition.git
 cd ChurnLens
 
 # 2. Install dependencies
