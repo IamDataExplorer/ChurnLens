@@ -101,6 +101,12 @@ Key steps performed:
 | **Gender** | Female customers churn slightly more |
 | **CreditScore / Salary** | Negligible impact on churn |
 
+![Active Member vs Churn](images/active_member_vs_churn.png)
+*Inactive members show significantly higher churn rate*
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+*Age (0.34) and IsActiveMember (−0.21) are the strongest correlates of churn*
+
 ### Customer Segments (K-Means, k=3)
 
 | Cluster | Profile | Churn Rate |
@@ -108,6 +114,9 @@ Key steps performed:
 | **Cluster 0** | Moderately engaged, no credit card | 22.74% |
 | **Cluster 1** | Highly active, has credit card | 11.67% ✅ |
 | **Cluster 2** | Inactive, has credit card | 29.33% ⚠️ |
+
+![Churn by Cluster](images/churn_distribution.png)
+*Cluster 2 (inactive members) carries the highest churn risk at 29.33%*
 
 ### Model Performance
 
@@ -126,6 +135,9 @@ Key steps performed:
 | PC3 (Gender) | 0.137 |
 | Geography | 0.114 |
 
+![Feature Importance](images/feature_importance.png)
+*IsActiveMember dominates with 42.6% importance score*
+
 ---
 
 ## 📈 Survival Analysis
@@ -135,6 +147,9 @@ Key steps performed:
 - **Germany (Geography 2)** shows the steepest survival curve decline
 - **2–3 products** lead to the best long-term retention
 - **Log-Rank tests** confirmed all categorical features significantly affect churn (p < 0.005), except NumOfProducts 3 vs 4 (p = 0.21)
+
+![Kaplan-Meier Survival Curve](images/kaplan_meier.png)
+*Active members (orange) survive significantly longer than inactive ones (blue)*
 
 ---
 
