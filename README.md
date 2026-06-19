@@ -1,3 +1,5 @@
+![ChurnLens Banner](images/banner.png)
+
 # 🏦 ChurnLens: Analysing and Predicting Customer Attrition
 
 > A complete end-to-end data analysis project to understand, predict, and segment bank customers based on churn behaviour using statistical techniques and machine learning.
