@@ -38,10 +38,10 @@ ChurnLens/
 │   └── train.csv                  # Raw dataset from Kaggle
 │
 ├── notebooks/
-│   ├── 01_preprocessing.ipynb     # Data cleaning & transformation
-│   ├── 02_eda.ipynb               # Exploratory Data Analysis
-│   ├── 03_multivariate.ipynb      # PCA, Logistic Regression, XGBoost, Clustering
-│   └── 04_survival_analysis.ipynb # Kaplan-Meier & Log-Rank tests
+│   ├── 01_Pre_Processing.ipynb     # Data cleaning & transformation
+│   ├── 02_EDA.ipynb               # Exploratory Data Analysis
+│   ├── 03_Multivariate_Analysis.ipynb      # PCA, Logistic Regression, XGBoost, Clustering
+│   └── 04_Survival_Analysis.ipynb # Kaplan-Meier & Log-Rank tests
 │
 ├── report/
 │   └── ChurnLens_Report.pdf       # Full M.Sc. project report
@@ -205,17 +205,14 @@ jupyter
 
 ---
 
-## 📓 Google Colab Notebooks
+## 📓 Datasets (cleaned)
 
-You can run the notebooks directly in Google Colab without any local setup:
+You can directly use the processed datasets used in notebooks 2, 3 and 4 for further analysis:
 
-| Notebook | Link |
+| Dataset | Link |
 |---|---|
-| Data Pre-processing | [Open in Colab](https://drive.google.com/file/d/1PPDVkmMpwuBRUZWtJ_HrewOXK19YwmVW/view?usp=sharing) |
-| Exploratory Data Analysis | [Open in Colab](https://colab.research.google.com/drive/1Vl56uk6lD8QxuOrshDScIpl-2xi79dBe?usp=sharing) |
-| Multivariate Analysis | [Open in Colab](https://colab.research.google.com/drive/1dCax8v_WcAm3B2ZbzKsUPa9H9UL8H6LX?usp=sharing) |
-| Survival Analysis | [Open in Colab](https://colab.research.google.com/drive/1Ey9OsNPadwHYKTJvUdLE0U007a1AP2ST?usp=sharing) |
-
+| New_df | [View](https://drive.google.com/file/d/1QYJmRHgeu4TvhxykmOtwUV3TZGw4F8KM/view?usp=sharing) |
+| df_with_pc | [View](https://drive.google.com/file/d/1XXroD_ZAOyUKhwDWnFkFUmGkGDQ-nnDp/view?usp=sharing) |
 ---
 
 ## 💡 Business Recommendations
