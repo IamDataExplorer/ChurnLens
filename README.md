@@ -189,6 +189,7 @@ pip install -r requirements.txt
 # 4. Run notebooks in order
 jupyter notebook
 ```
+---
 
 ## 📓 Datasets (cleaned)
 
@@ -198,6 +199,7 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
 |---|---|
 | New_df | [View](https://drive.google.com/file/d/1QYJmRHgeu4TvhxykmOtwUV3TZGw4F8KM/view?usp=sharing) |
 | df_with_pc | [View](https://drive.google.com/file/d/1XXroD_ZAOyUKhwDWnFkFUmGkGDQ-nnDp/view?usp=sharing) |
+
 ---
 
 ## ⚠️ Limitations
@@ -228,6 +230,7 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
 
 - **No model deployment:** The predictive models are analytical outputs only — 
   no API, dashboard, or real-time scoring pipeline was built.
+
 ---
 
 ## 💡 Business Recommendations
