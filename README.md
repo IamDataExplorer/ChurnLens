@@ -183,28 +183,12 @@ cd ChurnLens
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Download the dataset from Kaggle and place it in /data/train.csv
+# 3. Download the dataset from Kaggle → place in /data/
+# Link:https://www.kaggle.com/datasets/rangalamahesh/bank-churn?select=train.csv
 
 # 4. Run notebooks in order
 jupyter notebook
 ```
-
-### requirements.txt
-```
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-xgboost
-imbalanced-learn
-lifelines
-statsmodels
-scipy
-jupyter
-```
-
----
 
 ## 📓 Datasets (cleaned)
 
@@ -214,6 +198,36 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
 |---|---|
 | New_df | [View](https://drive.google.com/file/d/1QYJmRHgeu4TvhxykmOtwUV3TZGw4F8KM/view?usp=sharing) |
 | df_with_pc | [View](https://drive.google.com/file/d/1XXroD_ZAOyUKhwDWnFkFUmGkGDQ-nnDp/view?usp=sharing) |
+---
+
+## ⚠️ Limitations
+
+- **Synthetic dataset context:** The dataset is sourced from Kaggle and may not fully 
+  represent real-world banking complexity, including regulatory constraints, 
+  product-specific behaviour, or regional market dynamics.
+
+- **Balance column dropped:** Over 80,000 customers had zero balance. While this 
+  decision was justified, it means account balance — a potentially important 
+  financial signal — was excluded from all models.
+
+- **PCA interpretability trade-off:** Using PCA to address multicollinearity improves 
+  model stability but reduces direct interpretability. PC1, PC2, PC3 are linear 
+  combinations — not raw features — making business explanations less intuitive.
+
+- **Static snapshot analysis:** The dataset represents a single point in time. 
+  No time-series or longitudinal customer behaviour (e.g. transaction trends, 
+  seasonal patterns) was modelled.
+
+- **Class imbalance handling:** SMOTE generates synthetic samples rather than 
+  real data, which can introduce noise. The improved recall (74%) comes at the 
+  cost of reduced overall accuracy (73%).
+
+- **Geography encoded as ordinal:** France=1, Germany=2, Spain=3 implies an 
+  order that doesn't exist. One-hot encoding would have been statistically 
+  cleaner, though it was avoided to limit dimensionality.
+
+- **No model deployment:** The predictive models are analytical outputs only — 
+  no API, dashboard, or real-time scoring pipeline was built.
 ---
 
 ## 💡 Business Recommendations
@@ -243,8 +257,7 @@ Based on the analysis, banks can take the following actions:
 
 ## 📄 License
 
-This project is submitted as an academic requirement. The dataset is publicly available on Kaggle. Feel free to use the code for learning purposes with appropriate attribution.
-
+This project is licensed under the [MIT License](LICENSE).
 ---
 
 > *"Retaining a customer is not just a business goal — it's a data problem waiting to be solved."*
