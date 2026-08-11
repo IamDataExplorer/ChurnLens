@@ -82,6 +82,7 @@ Key steps performed:
 - Checked and removed **30 duplicate entries**
 - No missing values found in the dataset
 - Converted `Tenure` from years to days for granular analysis
+- Dropped invalid age entries 36.44 and 32.34 
 - Validated data ranges (credit score, age, binary flags)
 - Encoded categorical variables numerically
 - Retained domain-valid outliers in `Age` and `CreditScore`
