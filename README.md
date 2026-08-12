@@ -228,8 +228,7 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
   order that doesn't exist. One-hot encoding would have been statistically 
   cleaner, though it was avoided to limit dimensionality.
 
-- **No model deployment:** The predictive models are analytical outputs only — 
-  no API, dashboard, or real-time scoring pipeline was built.
+- **No model deployment:** The predictive models are analytical outputs only and no API, dashboard, or real-time scoring pipeline was built.
 
 ---
 
