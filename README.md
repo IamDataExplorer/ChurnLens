@@ -8,7 +8,7 @@
 
 ## 📌 Project Overview
 
-Customer churn is one of the most critical challenges in the banking industry. Losing a customer not only means lost revenue but also the cost of acquiring a new one — which is significantly higher than retaining an existing one.
+Customer churn is one of the most critical challenges in the banking industry. Losing a customer not only means lost revenue but also the cost of acquiring a new one which is significantly higher than retaining an existing one.
 
 **ChurnLens** is an M.Sc. Statistics final year project that builds a full analytical pipeline on a real-world bank customer dataset to:
 - Uncover patterns and factors driving customer churn
@@ -54,19 +54,19 @@ ChurnLens/
 
 ## 📊 Dataset
 
-- **Source:** [Kaggle — Bank Churn Dataset](https://www.kaggle.com/datasets/rangalamahesh/bank-churn/data?select=train.csv)
+- **Source:** [Kaggle - Bank Churn Dataset](https://www.kaggle.com/datasets/rangalamahesh/bank-churn/data?select=train.csv)
 - **Size:** 165,034 rows × 14 columns
 - **Target Variable:** `Exited` (1 = Churned, 0 = Retained)
 
 | Feature | Description |
 |---|---|
 | `CreditScore` | Customer's credit score (350–850) |
-| `Geography` | Country — France, Germany, Spain |
+| `Geography` | Country - France, Germany, Spain |
 | `Gender` | Male / Female |
 | `Age` | Customer age in years |
 | `Tenure` | Years with the bank |
 | `Balance` | Bank account balance |
-| `NumOfProducts` | Number of bank products used (1–4) |
+| `NumOfProducts` | Number of bank products used (1 - 4) |
 | `HasCrCard` | Owns a credit card (0/1) |
 | `IsActiveMember` | Active account usage (0/1) |
 | `EstimatedSalary` | Estimated annual salary |
@@ -204,29 +204,17 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
 
 ## ⚠️ Limitations
 
-- **Synthetic dataset context:** The dataset is sourced from Kaggle and may not fully 
-  represent real-world banking complexity, including regulatory constraints, 
-  product-specific behaviour, or regional market dynamics.
+- **Synthetic dataset context:** The dataset is sourced from Kaggle and may not fully represent real-world banking complexity, including regulatory constraints product-specific behaviour, or regional market dynamics.
 
-- **Balance column dropped:** Over 80,000 customers had zero balance. While this 
-  decision was justified, it means account balance — a potentially important 
-  financial signal — was excluded from all models.
+- **Balance column dropped:** Over 80,000 customers had zero balance. While this decision was justified, it means account balance which is a potentially important financial signal was excluded from all models.
 
-- **PCA interpretability trade-off:** Using PCA to address multicollinearity improves 
-  model stability but reduces direct interpretability. PC1, PC2, PC3 are linear 
-  combinations — not raw features — making business explanations less intuitive.
+- **PCA interpretability trade-off:** Using PCA to address multicollinearity improves model stability but reduces direct interpretability. PC1, PC2, PC3 are linear combinations and not raw features making business explanations less intuitive.
 
-- **Static snapshot analysis:** The dataset represents a single point in time. 
-  No time-series or longitudinal customer behaviour (e.g. transaction trends, 
-  seasonal patterns) was modelled.
+- **Static snapshot analysis:** The dataset represents a single point in time. No time-series or longitudinal customer behaviour (e.g. transaction trends seasonal patterns) was modelled.
 
-- **Class imbalance handling:** SMOTE generates synthetic samples rather than 
-  real data, which can introduce noise. The improved recall (74%) comes at the 
-  cost of reduced overall accuracy (73%).
+- **Class imbalance handling:** SMOTE generates synthetic samples rather than real data, which can introduce noise. The improved recall (74%) comes at the cost of reduced overall accuracy (73%).
 
-- **Geography encoded as ordinal:** France=1, Germany=2, Spain=3 implies an 
-  order that doesn't exist. One-hot encoding would have been statistically 
-  cleaner, though it was avoided to limit dimensionality.
+- **Geography encoded as ordinal:** France=1, Germany=2, Spain=3 implies an order that doesn't exist. One-hot encoding would have been statistically cleaner, though it was avoided to limit dimensionality.
 
 - **No model deployment:** The predictive models are analytical outputs only and no API, dashboard, or real-time scoring pipeline was built.
 
@@ -236,11 +224,11 @@ You can directly use the processed datasets used in notebooks 2, 3 and 4 for fur
 
 Based on the analysis, banks can take the following actions:
 
-1. **Target Cluster 2 (29% churn risk)** — Launch re-engagement campaigns for inactive credit card holders
-2. **Cross-sell products** — Push single-product customers towards 2–3 product bundles
-3. **Regional strategy for Germany** — Investigate service quality or competitive pressures specific to that market
-4. **Loyalty programs for older customers** — Age is the strongest predictor; senior customers need tailored engagement
-5. **Monitor inactivity signals** — Build early-warning systems based on `IsActiveMember` status
+1. **Target Cluster 2 (29% churn risk):**  Launch re-engagement campaigns for inactive credit card holders
+2. **Cross-sell products:**  Push single-product customers towards 2–3 product bundles
+3. **Regional strategy for Germany:**  Investigate service quality or competitive pressures specific to that market
+4. **Loyalty programs for older customers:** Age is the strongest predictor; senior customers need tailored engagement
+5. **Monitor inactivity signals:** Build early-warning systems based on `IsActiveMember` status
 
 ---
 
@@ -249,9 +237,9 @@ Based on the analysis, banks can take the following actions:
 | | |
 |---|---|
 | **Author** | Sohel Firoj Shaikh |
-| **Degree** | M.Sc. Statistics — Semester IV |
+| **Degree** | M.Sc. Statistics - Semester IV |
 | **Institution** | Government Vidarbha Institute of Science and Humanities (Autonomous), Amravati |
-| **Academic Year** | 2024–25 |
+| **Academic Year** | 2024-25 |
 | **Project Guide** | Mrs. Shubhangi Bhagat |
 | **HoD** | Dr. Neeta W. Andure |
 
@@ -262,4 +250,4 @@ Based on the analysis, banks can take the following actions:
 This project is licensed under the [MIT License](LICENSE).
 ---
 
-> *"Retaining a customer is not just a business goal — it's a data problem waiting to be solved."*
+> *"Retaining a customer is not just a business goal - it's a data problem waiting to be solved."*
